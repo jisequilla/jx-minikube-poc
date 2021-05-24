@@ -11,7 +11,7 @@
     - name: bucketrepo
       url: http://bucketrepo-jx.192.168.64.3.nip.io/
     - name: hook
-      url: http://8d2d07091651.ngrok.io/hook
+      url: http://afb0940f1506.ngrok.io/hook
     lastDeployed: "2021-05-24T10:39:20Z"
     name: jxboot-helmfile-resources
     repositoryName: jx3
