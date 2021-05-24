@@ -1,0 +1,17 @@
+apiVersion: gitops.jenkins-x.io/v1alpha1
+kind: SourceConfig
+metadata:
+  creationTimestamp: null
+spec:
+  jenkinsServers:
+  - groups:
+    - owner: jisequilla
+      provider: https://github.com
+      providerKind: github
+      repositories:
+      - name: jenkins-x-test-app
+    server: myjenkins
+  slack:
+    channel: '#jenkins-x-pipelines'
+    kind: failureOrNextSuccess
+    pipeline: release
